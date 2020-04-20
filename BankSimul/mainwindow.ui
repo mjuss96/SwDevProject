@@ -1,0 +1,3277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255,255,255)</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255)
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>10</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <widget class="QPushButton" name="pushButtonWithdraw">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>50</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;</string>
+        </property>
+        <property name="text">
+         <string>Nosta rahaa</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonBalance">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>270</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>85</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>85</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>85</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>85</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>85</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>85</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>85</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>85</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>85</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;</string>
+        </property>
+        <property name="text">
+         <string>Näytä saldo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonHistory">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>490</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+
+</string>
+        </property>
+        <property name="text">
+         <string>Selaa tilitapahtumia</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonOff">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 50px;
+background-color: rgb(255, 170, 0);</string>
+        </property>
+        <property name="text">
+         <string>Kirjaudu ulos</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_1">
+       <widget class="QLabel" name="labelWithdraw">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>0</y>
+          <width>281</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nosta rahaa</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::NoTextInteraction</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonEUR">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>170</y>
+          <width>300</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image:url(:/images/flag_eu.png);
+background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoRepeat">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonSEK">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>170</y>
+          <width>300</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image:url(:/images/flag_swe.png);
+background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonNOK">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>380</y>
+          <width>300</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image:url(:/images/flag_nor.png);
+color:rgb(200, 200, 200);
+background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonRUB">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>380</y>
+          <width>300</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image:url(:/images/flag_rus.png);
+background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonGBP">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>590</y>
+          <width>300</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image:url(:/images/flag_gb.png);
+background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonUSD">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>590</y>
+          <width>300</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image:url(:/images/flag_us.png);
+color:rgb(200, 200, 200);
+background-color:rgb(85, 255, 0);
+border-radius: 50px;
+height: 181;
+width: 300;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonBack">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 50px;
+min-width: 500px;
+min-height: 181px;
+background-color:rgb(255, 170, 0)</string>
+        </property>
+        <property name="text">
+         <string>Sulje</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nosto_omistanajanEtunimi">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nosto_omiistajanSukunimi">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>60</y>
+          <width>211</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nosto_omistajanOsoite">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>110</y>
+          <width>411</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nosto_saldo">
+        <property name="geometry">
+         <rect>
+          <x>1030</x>
+          <y>60</y>
+          <width>211</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>230</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>EUR</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>440</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>RUB</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>650</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>GBP</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>1320</x>
+          <y>230</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>SEK</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>1320</x>
+          <y>440</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>NOK</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>1320</x>
+          <y>650</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>USD</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>pushButtonEUR</zorder>
+       <zorder>pushButtonSEK</zorder>
+       <zorder>pushButtonNOK</zorder>
+       <zorder>pushButtonRUB</zorder>
+       <zorder>pushButtonGBP</zorder>
+       <zorder>pushButtonUSD</zorder>
+       <zorder>pushButtonBack</zorder>
+       <zorder>labelWithdraw</zorder>
+       <zorder>nosto_omistanajanEtunimi</zorder>
+       <zorder>nosto_omiistajanSukunimi</zorder>
+       <zorder>nosto_omistajanOsoite</zorder>
+       <zorder>nosto_saldo</zorder>
+       <zorder>label_3</zorder>
+       <zorder>label_4</zorder>
+       <zorder>label_5</zorder>
+       <zorder>label_6</zorder>
+       <zorder>label_7</zorder>
+       <zorder>label_8</zorder>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <widget class="QPushButton" name="pushButtonBack_2">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 170, 0);
+border-radius: 50px;</string>
+        </property>
+        <property name="text">
+         <string>Sulje</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_Name">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>70</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_date_1">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>280</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>1 date</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_Lastname">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>70</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string>Last</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_info_1">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>280</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>1 info</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_date_2">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>370</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_date_3">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>460</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_date_4">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>550</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_date_5">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>640</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_info_2">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>370</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_info_3">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>460</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_info_4">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>550</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_info_5">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>640</y>
+          <width>400</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_balance_saldoText">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>130</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string>SALDO</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_balance_saldo">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>130</y>
+          <width>571</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelCB_address">
+        <property name="geometry">
+         <rect>
+          <x>1010</x>
+          <y>70</y>
+          <width>341</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="text">
+         <string>Address</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <widget class="QPushButton" name="pushButtonBack_3">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 170, 0);
+border-radius: 50px;</string>
+        </property>
+        <property name="text">
+         <string>Sulje</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_omistajanEtunimi">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>80</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_omistajanSukunimi">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>80</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>260</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>260</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>310</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>310</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>360</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>360</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>410</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>410</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>460</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>460</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>510</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>510</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>560</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>560</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>610</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>610</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>660</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>660</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10_tilitapahtumaPVM">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>710</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10_tilitapahtuma">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>710</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_history_next">
+        <property name="geometry">
+         <rect>
+          <x>1190</x>
+          <y>450</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 170, 255);
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string>SEURAAVAT</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_history_back">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>1190</x>
+          <y>560</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 170, 255);
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string>EDELLISET</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_history_saldo">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>190</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_history_saldo_2">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>190</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string>SALDO</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_omistajan_osoite">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>130</y>
+          <width>401</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <widget class="QPushButton" name="pushButtonBack_4">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 0);
+border-radius:50px;
+border-style: outset;
+</string>
+        </property>
+        <property name="text">
+         <string>Sulje</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonEUR_20">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>20 €</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonEUR_40">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>40 €</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonEUR_60">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>60 €</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonEUR_100">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>100 €</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonEUR_200">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>200 €</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonEUR_500">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>500 €</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <widget class="QPushButton" name="pushButtonBack_5">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 0);
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string>Sulje</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonSEK_200">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>200 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonSEK_1000">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>1000 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonSEK_2000">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>2000 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonSEK_400">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>400 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonSEK_600">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>600 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonSEK_5000">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>5000 kr</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_200_SEK">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_400_SEK">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_600_SEK">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1000_SEK">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2000_SEK">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>750</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5000_SEK">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>750</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <widget class="QPushButton" name="pushButtonBack_6">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 0);
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string>Sulje</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonNOK_200">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>200 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonNOK_400">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>400 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonNOK_600">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>600 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonNOK_1000">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>1000 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonNOK_2000">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>2000 kr</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonNOK_5000">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>5000 kr</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_200_NOK">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_400_NOK">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_600_NOK">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1000_NOK">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2000_NOK">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>740</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5000_NOK">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>740</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_7">
+       <widget class="QPushButton" name="pushButtonBack_7">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 0);
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string>Sulje</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonRUB_1000">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>1000 ₽</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonRUB_3000">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>3000 ₽</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonRUB_5000">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>5000 ₽</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonRUB_10000">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>10000 ₽</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonRUB_35000">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>35000 ₽</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonRUB_20000">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>20000 ₽</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1000_RUB">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3000_RUB">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5000_RUB">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10000_RUB">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20000_RUB">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>740</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_35000_RUB">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>740</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <widget class="QPushButton" name="pushButtonBack_8">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 0);
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string>Sulje</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonGBP_20">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>20 £</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonGBP_50">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>50 £</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonGBP_100">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>100 £</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonGBP_500">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>500 £</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonGBP_200">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>200 £</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonGBP_70">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>70 £</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20_GBP">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_50_GBP">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_70_GBP">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_100_GBP">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_200_GBP">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>740</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_500_GBP">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>740</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_9">
+       <widget class="QPushButton" name="pushButtonBack_9">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>820</y>
+          <width>500</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 0);
+border-radius:50px;</string>
+        </property>
+        <property name="text">
+         <string>Sulje</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonUSD_20">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>181</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>20 $</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonUSD_40">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>110</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>40 $</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonUSD_60">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>60 $</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonUSD_100">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>100 $</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonUSD_200">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>550</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>200 $</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonUSD_80">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>330</y>
+          <width>304</width>
+          <height>185</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(85, 255, 0);
+border-radius: 50px;
+min-height: 181px;
+min-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>80 $</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20_USD">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40_USD">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>300</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_60_USD">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_80_USD">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>520</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_100_USD">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>740</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_200_USD">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>740</y>
+          <width>300</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_10">
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>250</y>
+          <width>1901</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>50</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tervetuloa</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>790</y>
+          <width>181</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>GO</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_cardLocked">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>230</y>
+          <width>171</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>-230</x>
+          <y>600</y>
+          <width>1901</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Syötä kortti</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>1020</x>
+          <y>500</y>
+          <width>521</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="rsc.qrc">:/images/card.png</pixmap>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="rsc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

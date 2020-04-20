@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/flag_eu.png</file>
+        <file>images/flag_gb.png</file>
+        <file>images/flag_nor.png</file>
+        <file>images/flag_rus.png</file>
+        <file>images/flag_swe.png</file>
+        <file>images/flag_us.png</file>
+        <file>images/card.png</file>
+    </qresource>
+</RCC>
